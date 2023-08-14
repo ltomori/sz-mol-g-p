@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Számológép</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="calculator shadow p-3">
+      <input type="text" id="output" class="form-control mb-3" disabled>
+      <div class="buttons">
+        <div class="row">
+          <button onclick="appendCharacter('7')" class="btn btn-secondary col">7</button>
+          <button onclick="appendCharacter('8')" class="btn btn-secondary col">8</button>
+          <button onclick="appendCharacter('9')" class="btn btn-secondary col">9</button>
+          <button onclick="appendCharacter('/')" class="btn btn-secondary col">/</button>
+        </div>
+        <div class="row">
+          <button onclick="appendCharacter('4')" class="btn btn-secondary col">4</button>
+          <button onclick="appendCharacter('5')" class="btn btn-secondary col">5</button>
+          <button onclick="appendCharacter('6')" class="btn btn-secondary col">6</button>
+          <button onclick="appendCharacter('*')" class="btn btn-secondary col">*</button>
+        </div>
+        <div class="row">
+          <button onclick="appendCharacter('1')" class="btn btn-secondary col">1</button>
+          <button onclick="appendCharacter('2')" class="btn btn-secondary col">2</button>
+          <button onclick="appendCharacter('3')" class="btn btn-secondary col">3</button>
+          <button onclick="appendCharacter('-')" class="btn btn-secondary col">-</button>
+        </div>
+        <div class="row">
+          <button onclick="appendCharacter('+')" class="btn btn-secondary col">+</button>
+          <button onclick="appendCharacter('0')" class="btn btn-secondary col">0</button>
+          <button onclick="appendCharacter('.')" class="btn btn-secondary col">.</button>
+          <button onclick="clearDisplay()" class="btn btn-danger col">C</button>
+        </div>
+        <div class="row">
+          <button onclick="calculate()" class="btn btn-primary col">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
